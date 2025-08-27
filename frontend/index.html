@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Customer Support Ticket Categorization</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-container">
+    <h1>Customer Support Ticket Categorization</h1>
+    <p>Enter a customer query below and let AI classify it!</p>
+
+    <textarea id="ticketInput" placeholder="Type your ticket here..."></textarea>
+    <button onclick="classifyTicket()">Classify Ticket</button>
+
+    <!-- Latest Result -->
+    <div id="result" class="hidden"></div>
+
+    <!-- Prediction History -->
+    <div id="history" class="history hidden">
+      <h2>📜 Prediction History</h2>
+      <div id="historyList"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
